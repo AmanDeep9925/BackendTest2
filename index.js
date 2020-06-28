@@ -4,9 +4,19 @@ const port = process.env.PORT || 8000;
 // Initializing express
 const express = require('express');
 const app = express();
+const expressLayouts = require('express-ejs-layouts');
 
-app.use('view engine','ejs');
-app.use('view','./views')
+// Setting up the DB
+
+// Setting up the layouts
+app.use(expressLayouts);
+
+// Setting up the view engine
+app.set('view engine','ejs');
+app.set('views','./views')
+
+// Intitalizing the router
+app.use('/',require('./routes'))
 
 app.listen(port,(err) =>{
 
