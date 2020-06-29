@@ -1,10 +1,13 @@
 <h1>User SignUp</h1>
 
+<button> <a href="/user/auth/google">Google SignIn/SignUp</a> </button>
+
 <div id="login-section">
-    <form action="/user/login" method="post">
-        <input type="text" name="name" id="">
-      <input type="email" name="email" id="user-name" />
-      <input type="password" name="password" id="user-password" />
-      <button type="submit">Log In</button>
-    </form>
-  </div>
+  <form action="/user/create" method="post">
+    <input type="text" name="name" id="user-name" placeholder="Enter Name"/>
+    <input type="email" name="email" id="user-email" placeholder="Enter Email"/>
+    <input type="password" name="password" id="user-password" placeholder="Enter Password"/>
+    <input type="password" name="confirmpassword" id="user-cnfrm-password" placeholder="Confirm Password"/>
+    <button type="submit">SignUp</button>
+  </form>
+</div>
