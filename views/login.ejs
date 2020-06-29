@@ -1,18 +1,42 @@
-<h1>User Login</h1>
+<h1></h1>
 
-<button>
-  <a href="/user/auth/google">Google SignIn/SignUp</a>
-</button>
+<div class="jumbotron jumbotron-fluid col-lg-6 mx-auto">
+  <div class="container">
+    <h1 class="display-4">User Login</h1>
+  </div>
+</div>
+
+<div class="col-sm-4 mx-auto mb-5">
+  <a href="/user/auth/google" class="btn btn-danger btn-lg btn-block">Log In with Google</a>
+</div>
 
 <div id="login-section">
-  <form action="/user/create-session" method="post">
-    <input type="email" name="email" id="user-name" placeholder="Enter Email" />
-    <input
+  <form action="/user/create-session" method="post" class="card col-sm-4 mx-auto pt-3">
+
+    <div class="form-group col mx-auto">
+      <input
+    type="email"
+    name="email"
+    id="user-name"
+     placeholder="Enter Email"
+     class="form-control"
+     />
+    </div>
+
+    <div class="form-group col mx-auto">
+      <input
       type="password"
       name="password"
       id="user-password"
       placeholder="Enter Password"
+      class="form-control"
     />
-    <button type="submit">Log In</button>
+    </div>
+
+
+    <div class="form-group col mx-auto">
+      <button type="submit" class="btn btn-primary col-sm-12 mx-auto">SignUp</button>
+
+    </div>
   </form>
 </div>
