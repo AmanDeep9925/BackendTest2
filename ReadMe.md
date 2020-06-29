@@ -8,12 +8,10 @@ Test submission
 
 ### What I learnt
 
-- Creating server
+- Managing Auths
 - Handling server Requests
-- Managing Routes
-- Declaring Actions
-- Database Queries
-- Working of HTML engines
+- Using google as service
+- GCP
 
 ### NPM packages
 - express
